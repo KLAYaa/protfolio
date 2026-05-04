@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo" id="navLogo">AM</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about"   onclick="closeMobileMenu()">About</a></li>
+      <li><a href="#work"    onclick="closeMobileMenu()">Work</a></li>
+      <li><a href="#skills"  onclick="closeMobileMenu()">Skills</a></li>
+      <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="noise"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag reveal" id="heroTag">Open to Opportunities · 2025</div>
+      <h1 class="hero-title reveal">
+        <span class="line" id="heroName">K LAYA</span>
+        <span class="line italic">Developer &</span>
+        <span class="line">Problem Solver</span>
+      </h1>
+      <p class="hero-sub reveal" id="heroBio">Passionate fresher looking to build impactful products.</p>
+      <div class="hero-cta reveal">
+        <a href="#work"    class="btn btn-primary"><span class="btn-text">View My Work</span></a>
+        <a href="/resume"  class="btn btn-ghost"   id="resumeBtn" download style="display:none">Download Resume ↓</a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk →</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Open to Work</span><span class="dot">◆</span>
+      <span>Web Development</span><span class="dot">◆</span>
+      <span>Python</span><span class="dot">◆</span>
+      <span>Problem Solving</span><span class="dot">◆</span>
+      <span>Fresh Graduate</span><span class="dot">◆</span>
+      <span>Open to Work</span><span class="dot">◆</span>
+      <span>Web Development</span><span class="dot">◆</span>
+      <span>Python</span><span class="dot">◆</span>
+      <span>Problem Solving</span><span class="dot">◆</span>
+      <span>Fresh Graduate</span><span class="dot">◆</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="section-label">About Me</div>
+          <h2 class="section-title reveal" id="aboutName">My K.Laya <em>Story</em></h2>
+          <p class="about-text reveal" id="aboutBio">Loading...</p>
+
+          <!-- Education -->
+          <div class="edu-block reveal" id="aboutEdu">
+            <span class="edu-icon">🎓</span>
+            <span>Loading education...</span>
+          </div>
+
+          <!-- Location / Email -->
+          <p class="about-location reveal" id="aboutLocation">📍 Loading...</p>
+
+          <!-- Social links -->
+          <div class="social-links reveal">
+            <a href="#" class="social-btn social-github"   target="_blank" style="display:none">GitHub</a>
+            <a href="#" class="social-btn social-linkedin" target="_blank" style="display:none">LinkedIn</a>
+          </div>
+
+          <!-- Stats -->
+          <div class="about-stats reveal">
+            <div class="stat">
+              <span class="stat-num" data-key="projects" data-count="0">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-key="experience" data-count="0">0</span>
+              <span class="stat-label">Yrs Exp.</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-key="clients" data-count="0">0</span>
+              <span class="stat-label">Clients</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right reveal">
+          <div class="photo-frame">
+            <div class="photo-inner">
+              <svg viewBox="0 0 400 480" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#c9a96e;stop-opacity:0.3"/>
+                    <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:0.1"/>
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="480" fill="url(#grad1)" rx="8"/>
+                <circle cx="200" cy="160" r="80" fill="#c9a96e" opacity="0.15"/>
+                <ellipse cx="200" cy="380" rx="130" ry="80" fill="#c9a96e" opacity="0.1"/>
+                <text id="photoInitials" x="200" y="200" text-anchor="middle"
+                  font-family="Playfair Display" font-size="80" fill="#c9a96e" opacity="0.4">?</text>
+                <text x="200" y="300" text-anchor="middle"
+                  font-family="Outfit" font-size="16" fill="#c9a96e" opacity="0.5">Your Photo Here</text>
+                <text x="200" y="330" text-anchor="middle"
+                  font-family="DM Mono" font-size="12" fill="#888" opacity="0.7">Replace SVG with &lt;img&gt; tag</text>
+              </svg>
+            </div>
+            <div class="photo-badge">Open to Work ✦</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work section" id="work">
+    <div class="container">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title reveal">Things I've <em>Built</em></h2>
+      <div class="projects-grid" id="projectsGrid">
+        <p style="color:var(--text-muted);grid-column:1/-1;text-align:center;padding:40px">Loading projects...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">Skills</div>
+      <h2 class="section-title reveal">My <em>Toolkit</em></h2>
+      <div class="skill-category reveal" id="skillsContainer">
+        <p style="color:var(--text-muted)">Loading skills...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section certs-section" id="certs" style="padding-top:0">
+    <div class="container">
+      <div class="section-label">Certifications</div>
+      <h2 class="section-title reveal">What I've <em>Learned</em></h2>
+      <div class="certs-grid" id="certsContainer"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-card reveal">
+        <div class="contact-glow"></div>
+        <div class="section-label">Contact</div>
+        <h2 class="contact-title">Let's <em>Connect</em></h2>
+        <p class="contact-sub">I'm actively looking for opportunities. Send me a message and I'll get back to you!</p>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="john@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" rows="5" placeholder="Hi! I'd like to discuss an opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-icon">→</span>
+          </button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-logo">AM</div>
+        <p>Open to work · Building with passion</p>
+      </div>
+      <div class="footer-links">
+        <a href="#" class="social-github"   target="_blank">GitHub</a>
+        <a href="#" class="social-linkedin" target="_blank">LinkedIn</a>
+        <a href="#" class="social-twitter"  target="_blank">Twitter</a>
+      </div>
+      <p class="footer-copy" id="footerName">© 2025 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
