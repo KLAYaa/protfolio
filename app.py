@@ -46,7 +46,7 @@ PROJECTS = [
         "title": "Predication of Chornic Kidney",
         "description": "Developed a VGG-based deep learning model to predict Chronic Kidney Disease, achieving 93% accuracy in classifying patient data for early diagnosis and decision support.",
         "tags": ["Python", "Deep Learning", "CNN", "VGG16", "TensorFlow", "Keras", "NumPy", "Image Processing"],
-        "emoji": "🫁",
+        "emoji": "🫘",
         "color": "linear-gradient(135deg, #1a0a2e 0%, #16213e 100%)",
         "link": "https://github.com/yourusername/project1", 
         "year": 2025,
@@ -63,17 +63,6 @@ PROJECTS = [
         "year": 2024,
         "featured": True,
     },
-    # {
-    #     "id": 3,
-    #     "title": "Project Three Name",
-    #     "description": "Write what this project does, what problem it solves, and what you built.",
-    #     "tags": ["HTML", "CSS", "JavaScript"],
-    #     "emoji": "🌐",
-    #     "color": "linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 100%)",
-    #     "link": "#",
-    #     "year": 2023,
-    #     "featured": False,
-    # },
 ]
 
 
